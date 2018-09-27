@@ -27,4 +27,4 @@ The same can be configured as shown below. Device Manager -> Ports -> USB Serial
 
 The default controls are as follows - 
 
-![alt text](https://github.com/shibarchi/TiFCon/blob/master/joystick.PNG)
+![alt text](https://github.com/shibarchi/TiFCon/blob/master/joystick.png)

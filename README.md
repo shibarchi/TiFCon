@@ -62,5 +62,5 @@ The next 24 elements (,89,12,84,67,67,149,107,67,131,120,106,67,0,192,121,196,18
 The next element is 17 i.e. the index for Pitch,roll, heading followed by 3 zeros. (60,118,187,64,28,193,81,61,1,248,165,66,184,152,135,66,0,192,121,196,0,192,121,196,0,192,121,196,0,192,121,196,) represents pitch, roll, true heading and magnetic heading followed by 4 blank spaces (0,192,121,196 is one blank space).
 
 ***BitConverter.ToSingle*** (or Int/Int16/Double) can be used in C# to get numeric data from the 4 bytes; 
-
+i.e. **(BitConverter.ToSingle(xdata, 45)** will give pitch value if data array is stored as **xdata**
 

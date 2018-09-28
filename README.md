@@ -1,7 +1,11 @@
 # TiFCon (Time-predictable Flight Control)
 
 TiFCon, Time-predictable Flight Control, is a fly-by-wire flight control system based on T-CREST architecture.
+The system is connected to X-Plane, where you can perform experiemnts on differnet aircrafts with the flight control system. 
 
+One can also implement the flight control on a differnt embedded hardware (like arduino). We also provide an **emulator to use the same flight controller without any external hardware**. See the emulator section for details.
+
+The project is open-sourced and all the source codes are available in this git. 
 
 
 
@@ -63,4 +67,10 @@ The next element is 17 i.e. the index for Pitch,roll, heading followed by 3 zero
 
 ***BitConverter.ToSingle*** (or Int/Int16/Double) can be used in C# to get numeric data from the 4 bytes; 
 i.e. **BitConverter.ToSingle(xdata, 45)** will give pitch value if data array is stored as **xdata**
+
+
+## Bare minimum Control 
+
+To implement a basic autonomous flight control system, we need to control - elevators, ailerons, rudder, throttle and nose wheel. In X-Plane control commands for control surfaces are between +1.0 to -1.0, -40 (counter clock dir) to +40 for nose wheel and 0 to 1.0 for throttle. 
+
 
